@@ -1,0 +1,169 @@
+/* 
+.timeline-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.timeline-line {
+    position: absolute;
+    width: 3px;
+    background: linear-gradient(to bottom, #00eaff, #007bff);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 12px #00eaff;
+}
+
+.timeline-item {
+    margin: 35px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.mini-dashboard-card {
+    width: 90px;
+    height: 110px;
+    border-radius: 16px;
+    padding: 10px;
+    text-align: center;
+
+    background: linear-gradient(145deg, #1b3c34, #0f2a23);
+
+    border: 2px solid rgba(0, 234, 255, 0.4);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.5),
+        inset 0 0 10px rgba(0, 234, 255, 0.2);
+
+    transition: 0.3s;
+    position: relative;
+}
+
+.mini-dashboard-card::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: 16px;
+    background: linear-gradient(45deg, #00eaff, #007bff);
+    z-index: -1;
+    filter: blur(6px);
+    opacity: 0.6;
+}
+
+.mini-dashboard-card:hover {
+    transform: translateY(-8px) scale(1.08);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+}
+
+
+.mini-avatar {
+    width: 55px;
+    height: 55px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #00eaff;
+    box-shadow: 0 0 10px #00eaff;
+}
+
+.mini-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.mini-id {
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+} */
+
+
+
+
+
+
+
+
+
+/* Container */
+.timeline-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 🔥 CENTER LINE (IMPORTANT) */
+.timeline-line {
+    position: absolute;
+    width: 3px;
+    background: linear-gradient(to bottom, #00eaff, #007bff);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px #00eaff;
+    z-index: 0;
+}
+
+/* Item */
+.timeline-item {
+    position: relative;
+    /* margin: 15px 0; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
+}
+
+/* 🔥 Card */
+.mini-theme-card {
+    width: 130px;
+    height: 150px;
+    border-radius: 14px;
+    padding: 10px;
+    text-align: center;
+
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+/* Avatar */
+.mini-avatar {
+    width: 55px;
+    height: 55px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #00eaff;
+}
+
+/* ID */
+.mini-id {
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* 🔥 DOT CONNECTOR (line se connect karega) */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #00eaff;
+    border-radius: 50%;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 8px #00eaff;
+}
